@@ -1,7 +1,7 @@
 // CHARACTER COUNTER - SERVER
 // PURPOSE: Server-side script to receive a phrase from the client, which will then parse the phrase and output the count of each character in the phrase. NOTE: Character counts will aggregate with each new phrase sent by client, until a 'RESET-CM' is sent which will reset character counts.
 
-var express = require('express'),
+var app = require('express'),
 http = require('http'),
 qs = require('querystring'),
 sys = require('util');

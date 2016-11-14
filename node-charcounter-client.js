@@ -22,8 +22,10 @@ function send (thePhrase) {
     }).end(qs.stringify({ phrase: thePhrase}));
 }
 
+// GET INPUT PHRASE AND OUTPUT
 var phrase = process.argv[2];
 sys.log(phrase)
 
+// SEND PHRASE TO SERVER
 send(phrase.replace('\n', ''));
 
